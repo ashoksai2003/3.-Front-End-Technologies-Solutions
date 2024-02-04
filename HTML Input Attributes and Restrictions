@@ -1,0 +1,186 @@
+
+--------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Types</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="interests">Interests:</label>
+        <input type="checkbox" id="interest1" name="interest1" value="interest1">
+        <label for="interest1">Interest 1</label>
+        <input type="checkbox" id="interest2" name="interest2" value="interest2">
+        <label for="interest2">Interest 2</label><br>
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea><br>
+
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file"><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        <button type="button">Custom Button</button>
+    </form>
+</body>
+</html>
+
+
+--------------------------->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Input Types</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number"><br>
+
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range"><br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color"><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br>
+
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month"><br>
+
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file"><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        <button type="button">Custom Button</button>
+    </form>
+</body>
+</html>
+
+
+
+--------------------------->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Restrictions</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="disabled">Disabled Input:</label>
+        <input type="text" id="disabled" name="disabled" disabled value="This input is disabled"><br>
+
+        <label for="readonly">Readonly Input:</label>
+        <input type="text" id="readonly" name="readonly" readonly value="This input is read-only"><br>
+
+        <label for="required">Required Input:</label>
+        <input type="text" id="required" name="required" required><br>
+
+        <label for="minmax">Input with Min and Max:</label>
+        <input type="number" id="minmax" name="minmax" min="10" max="50" value="30"><br>
+
+        <label for="minmaxlength">Input with Min and Max Length:</label>
+        <input type="text" id="minmaxlength" name="minmaxlength" minlength="5" maxlength="10" value="Sample Text"><br>
+
+        <label for="size">Input with Size:</label>
+        <input type="text" id="size" name="size" size="20" value="Sample Text"><br>
+
+        <label for="value">Input with Default Value:</label>
+        <input type="text" id="value" name="value" value="Default Value"><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        <button type="button">Custom Button</button>
+    </form>
+</body>
+</html>
+
+--------------------------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Target Attribute</title>
+</head>
+<body>
+    <h1>Target Attribute Example</h1>
+
+    <h2>Links</h2>
+    <a href="https://www.example.com" target="_blank">Open Example.com in a new tab</a><br>
+    <a href="https://www.example.com" target="_self">Open Example.com in the same tab</a><br>
+    <a href="https://www.example.com" target="_parent">Open Example.com in the parent frame</a><br>
+    <a href="https://www.example.com" target="_top">Open Example.com in the full body of the window</a><br>
+
+    <h2>Forms</h2>
+    <form action="https://www.example.com/submit" method="post" target="_blank">
+        <label for="form-name">Name:</label>
+        <input type="text" id="form-name" name="name"><br>
+
+        <label for="form-email">Email:</label>
+        <input type="email" id="form-email" name="email"><br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
+
+
+--------------------------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframe Example</title>
+</head>
+<body>
+    <h1>Iframe Example</h1>
+
+    <iframe src="https://www.example.com" title="Example.com" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
