@@ -1,0 +1,81 @@
+# 1. Add CSS comments in your CSS block. 
+/* This is a comment in CSS */
+.selector1 {
+  property1: value1;
+  property2: value2;
+}
+
+
+------------------------->
+
+
+# 2. Create a page with different background-colour of a page and set an image as the 
+background-image of a page
+
+body {
+  background-color: #f0f0f0;
+  background-image: url('path/to/image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+------------------------->
+
+ 
+# 3. Create a different page with the width, style and color of the 4 border-style(set 
+different borders on each side with different patterns). 
+
+.selector1 {
+  border-top: 5px solid #f00;
+  border-right: 5px dashed #0f0;
+  border-bottom: 5px dotted #00f;
+  border-left: 5px double #000;
+}
+
+------------------------->
+
+
+# 4. Develop a page and set the height:(in pixels and %) and width:(in pixels and %) on 
+elements.
+
+.selector1 {
+  height: 200px;
+}
+.selector2 {
+  height: 50%;
+}
+.selector3 {
+  width: 300px;
+}
+.selector4 {
+  width: 50%;
+}
+
+
+------------------------->
+
+
+# 5. Develop a page with different font-styles, font-size, font-family, colors and text-align.
+
+.selector1 {
+  font-style: normal;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #000;
+  text-align: left;
+}
+.selector2 {
+  font-style: italic;
+  font-size: 24px;
+  font-family: Times New Roman, serif;
+  color: #f00;
+  text-align: center;
+}
+.selector3 {
+  font-style: oblique;
+  font-size: 12px;
+  font-family: Courier New, monospace;
+  color: #00f;
+  text-align: right;
+}
