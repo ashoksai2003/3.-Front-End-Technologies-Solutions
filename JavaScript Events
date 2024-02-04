@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listener Example</title>
+</head>
+<body>
+  <button id="myButton">Click me to display the current date and time</button>
+
+  <script>
+    // Get the button element by its ID
+    const button = document.getElementById("myButton");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Get the current date and time
+      const currentDateTime = new Date();
+
+      // Format the date and time as a string
+      const formattedDateTime = currentDateTime.toLocaleString();
+
+      // Display the formatted date and time in the console
+      console.log(formattedDateTime);
+    });
+  </script>
+</body>
+</html>
+
+
+-------------------------------->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Validation Example</title>
+</head>
+<body>
+  <form id="myForm">
+    <label for="myTextBox">Enter some text:</label><br>
+    <input type="text" id="myTextBox" name="myTextBox"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    // Get the form and text box elements by their IDs
+    const form = document.getElementById("myForm");
+    const textBox = document.getElementById("myTextBox");
+
+    // Add a submit event listener to the form
+    form.addEventListener("submit", function (event) {
+      // Prevent the default form submission behavior
+      event.preventDefault();
+
+      // Check if the text box is empty
+      if (textBox.value.trim() === "") {
+        // Display an error message
+        alert("Please enter some text in the text box before submitting the form.");
+      } else {
+        // Display a success message
+        alert("Form submitted successfully!");
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+-------------------------------->
+
+
+
+
+function calculateSum(a, b) {
+  console.log("Function 'calculateSum' called with arguments:", a, b);
+
+  if (typeof a !== "number" || typeof b !== "number") {
+    console.log("Error: Both arguments must be numbers.");
+    return;
+  }
+
+  const sum = a + b;
+  console.log("Sum:", sum);
+  return sum;
+}
+
+const result = calculateSum(5, 3);
+console.log("Result:", result);
+
+
+
+-------------------------------->
+
+
+
+
+// Function to set a cookie
+function setCookie(name, value, days) {
+  const expires = days ? `expires=${new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString()}` : "";
+  document.cookie = `${name}=${value};${expires};path=/`;
+}
+
+// Function to get a cookie
+function getCookie(name) {
+  const cookies = document.cookie.split(";");
+  for (const cookie of cookies) {
+    const [key, value] = cookie.trim().split("=");
+    if (key === name) {
+      return value;
+    }
+  }
+  return null;
+}
+
+// Function to check if a cookie exists
+function checkCookie(name) {
+  return getCookie(name) !== null;
+}
+
+// Set a cookie with a name of 'myCookie', a value of 'hello', and an expiration of 7 days
+setCookie("myCookie", "hello", 7);
+
+// Get the value of the 'myCookie' cookie
+const myCookieValue = getCookie("myCookie");
+console.log("myCookie value:", myCookieValue); // Output: "hello"
+
+// Check if the 'myCookie' cookie exists
+console.log("myCookie exists:", checkCookie("myCookie")); // Output: true
+
+// Check if the 'nonExistentCookie' cookie exists
+console.log("nonExistentCookie exists:", checkCookie("nonExistentCookie")); // Output: false
+
+
+
+-------------------------------->
+
+
+
+
+// Create a JSON object
+const myJsonObject = {
+  name: "John Doe",
+  age: 30,
+  occupation: "Software Engineer",
+  hobbies: ["Reading", "Hiking", "Coding"],
+};
+
+// Access properties using dot notation
+console.log("Name:", myJsonObject.name); // Output: "John Doe"
+console.log("Age:", myJsonObject.age); // Output: 30
+console.log("Occupation:", myJsonObject.occupation); // Output: "Software Engineer"
+console.log("First hobby:", myJsonObject.hobbies[0]); // Output: "Reading"
+
