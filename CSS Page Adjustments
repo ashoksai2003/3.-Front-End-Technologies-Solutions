@@ -1,0 +1,122 @@
+---> 1. 
+
+/* Set the default background color */
+body {
+    background-color: white;
+}
+
+/* Set the table border and hover effect */
+table {
+    border: 2px solid black;
+}
+
+/* Change the background color when hovering over the table */
+table:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+---------------------------------------->
+
+
+
+.element {
+  visibility: visible; /* default value */
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.collapsed {
+  visibility: collapse;
+}
+.element {
+  display: block; /* default value for block-level elements like divs */
+}
+
+.hidden {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.contents {
+  display: contents;
+}
+
+.list-item {
+  display: list-item;
+}
+
+
+---------------------------------------->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Set the height of the body to create a long page */
+    body {
+      height: 200vh;
+    }
+
+    /* Style the links */
+    .link {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: #333;
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+    }
+
+    /* Set the scroll-behavior property for the links */
+    .link:link, .link:visited {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <div id="top">
+    <p>This is the top of the page</p>
+    <a href="#bottom" class="link">Click to go to bottom of page</a>
+  </div>
+  <div id="bottom">
+    <p>This is the bottom of the page</p>
+    <a href="#top" class="link">Click to go to top of page</a>
+  </div>
+</body>
+</html>
+
+
+---------------------------------------->
+
+
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+---------------------------------------->
+
+
+.background {
+  width: 500px;
+  height: 500px;
+  background: url(image1.jpg) cover, url(image2.jpg) contain;
+}
