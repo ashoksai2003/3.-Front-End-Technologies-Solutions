@@ -1,0 +1,96 @@
+
+<button id="myButton">Click me</button>
+
+<script>
+  const button = document.getElementById("myButton");
+  button.addEventListener("click", function() {
+    this.style.display = "none";
+  });
+</script>
+
+
+----------------------------------------->
+
+
+function greet(greeting, name) {
+  console.log(greeting + ", " + name + "!" + " Welcome to our website.");
+}
+
+const person1 = { name: "Alice" };
+const person2 = { name: "Bob" };
+
+// Using call()
+greet.call(person1, "Hello", "Alice"); // Output: Hello, Alice! Welcome to our website.
+greet.call(person2, "Hi", "Bob"); // Output: Hi, Bob! Welcome to our website.
+
+// Using apply()
+greet.apply(person1, ["Hello", "Alice"]); // Output: Hello, Alice! Welcome to our website.
+greet.apply(person2, ["Hi", "Bob"]); // Output: Hi, Bob! Welcome to our website.
+
+// Using call() with an anonymous function to sum an array of numbers
+const numbers = [1, 2, 3, 4, 5];
+const sum = Function.prototype.apply.call(Math.max, null, numbers);
+console.log(sum); // Output: 5
+
+
+
+----------------------------------------->
+
+
+<button id="countButton">Count</button>
+<p id="counterValue">0</p>
+
+<script>
+  const button = document.getElementById("countButton");
+  const counterValueElement = document.getElementById("counterValue");
+  let counterValue = 0;
+
+  button.addEventListener("click", function() {
+    counterValue++;
+    counterValueElement.innerHTML = counterValue;
+  });
+</script>
+
+----------------------------------------->
+
+
+<button id="incrementButton">Increment</button>
+
+<script>
+  const counter = {
+    _counterValue: 0,
+    get counterValue() {
+      return this._counterValue;
+    },
+    set counterValue(newValue) {
+      if (newValue >= 0) {
+        this._counterValue = newValue;
+      } else {
+        console.log("Counter value cannot be negative.");
+      }
+    },
+  };
+
+  const button = document.getElementById("incrementButton");
+
+  button.addEventListener("click", function() {
+    counter.counterValue++;
+  });
+</script>
+
+----------------------------------------->
+
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+Object.defineProperty(greet.prototype, "description", {
+  value: "A simple greet function",
+  writable: false,
+});
+
+console.log(greet.prototype.description); // Output: A simple greet function
+
+greet.prototype.description = "A different description";
+console.log(greet.prototype.description); // Output: A simple greet function
+
