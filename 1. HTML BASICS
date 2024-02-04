@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basics HTML</title>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <p><i>This is italic text</i></p>
+    <p><b>This is bold text</b></p>
+    <a href="#section2">Navigate to section 2</a>
+    <h2 id="section2">Section 2</h2>
+    <p>This is a paragraph in section 2.</p>
+    <ul>
+        <li>List item 1</li>
+        <li class="hover">List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    <p>This is a blockquote:</p>
+    <blockquote>This is a quote.</blockquote>
+    <hr>
+    <p>This is a horizontal rule.</p>
+    <img src="image.jpg" alt="An image">
+    <div>
+        <p>This is a division.</p>
+        <span>This is a span.</span>
+    </div>
+    <style>
+        .hover:hover {
+            color: red;
+        }
+        .hover::before {
+            content: "Before";
+            color: blue;
+        }
+        .hover::after {
+            content: "After";
+            color: green;
+        }
+    </style>
+</body>
+</html>
+</html>
